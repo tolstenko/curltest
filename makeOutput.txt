@@ -1,0 +1,25 @@
+Alexandres-iMac:curltest tolstenko$ cd build/
+Alexandres-iMac:build tolstenko$ make
+/usr/local/Cellar/cmake/3.10.2/bin/cmake -H/Users/tolstenko/projects/curltest -B/Users/tolstenko/projects/curltest/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/Cellar/cmake/3.10.2/bin/cmake -E cmake_progress_start /Users/tolstenko/projects/curltest/build/CMakeFiles /Users/tolstenko/projects/curltest/build/CMakeFiles/progress.marks
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/Makefile2 all
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/curltest.dir/build.make CMakeFiles/curltest.dir/depend
+cd /Users/tolstenko/projects/curltest/build && /usr/local/Cellar/cmake/3.10.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/tolstenko/projects/curltest /Users/tolstenko/projects/curltest /Users/tolstenko/projects/curltest/build /Users/tolstenko/projects/curltest/build /Users/tolstenko/projects/curltest/build/CMakeFiles/curltest.dir/DependInfo.cmake --color=
+Scanning dependencies of target curltest
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/curltest.dir/build.make CMakeFiles/curltest.dir/build
+[ 50%] Building CXX object CMakeFiles/curltest.dir/main.cpp.obj
+/usr/local/bin/x86_64-w64-mingw32-g++  -DCURL_STATICLIB -D__STDC_LIMIT_MACROS @CMakeFiles/curltest.dir/includes_CXX.rsp -static -std=c++11 -Os -DNDEBUG   -std=gnu++11 -o CMakeFiles/curltest.dir/main.cpp.obj -c /Users/tolstenko/projects/curltest/main.cpp
+[100%] Linking CXX executable curltest.exe
+/usr/local/Cellar/cmake/3.10.2/bin/cmake -E cmake_link_script CMakeFiles/curltest.dir/link.txt --verbose=1
+/usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f CMakeFiles/curltest.dir/objects.a
+/usr/local/bin/x86_64-w64-mingw32-ar cr CMakeFiles/curltest.dir/objects.a @CMakeFiles/curltest.dir/objects1.rsp
+/usr/local/bin/x86_64-w64-mingw32-g++ -static -std=c++11 -Os -DNDEBUG   -Wl,--whole-archive CMakeFiles/curltest.dir/objects.a -Wl,--no-whole-archive  -o curltest.exe -Wl,--out-implib,libcurltest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/curltest.dir/linklibs.rsp
+/Users/tolstenko/.hunter/_Base/358385a/ff67179/6724395/Install/lib/libcrypto.a(b_addr.o):b_addr.c:(.text+0xaa): undefined reference to `__imp_getnameinfo'
+/Users/tolstenko/.hunter/_Base/358385a/ff67179/6724395/Install/lib/libcrypto.a(b_addr.o):b_addr.c:(.text+0x1ed): undefined reference to `gai_strerrorW'
+/Users/tolstenko/.hunter/_Base/358385a/ff67179/6724395/Install/lib/libcrypto.a(b_addr.o):b_addr.c:(.text+0xb68): undefined reference to `gai_strerrorW'
+/Users/tolstenko/.hunter/_Base/358385a/ff67179/6724395/Install/lib/libcrypto.a(b_sock.o):b_sock.c:(.text+0x3a3): undefined reference to `__imp_gethostbyname'
+/Users/tolstenko/.hunter/_Base/358385a/ff67179/6724395/Install/lib/libcrypto.a(bss_conn.o):bss_conn.c:(.text+0x9d7): undefined reference to `__imp_shutdown'
+collect2: error: ld returned 1 exit status
+make[2]: *** [curltest.exe] Error 1
+make[1]: *** [CMakeFiles/curltest.dir/all] Error 2
+make: *** [all] Error 2

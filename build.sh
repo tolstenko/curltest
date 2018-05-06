@@ -1,0 +1,1 @@
+cmake -Bbuild -H. -DHUNTER_STATUS_DEBUG=ON -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_TOOLCHAIN_FILE=./dependencies/polly/linux-mingw-w64.cmake
